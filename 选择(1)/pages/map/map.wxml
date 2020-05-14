@@ -1,0 +1,2 @@
+<!--pages/map/map.wxml-->
+<web-view src="http://api.map.baidu.com/place/detail?uid=4bb049d91598944799005000&output=html&source=placeapi_v2"></web-view>
