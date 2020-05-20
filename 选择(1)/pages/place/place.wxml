@@ -1,0 +1,5 @@
+<block wx:for="{{detail}}">
+<view>名字: {{item.name}}</view>
+<view>地址：{{item.adress}}</view>
+<view>简介：{{item.content}}</view>
+</block>

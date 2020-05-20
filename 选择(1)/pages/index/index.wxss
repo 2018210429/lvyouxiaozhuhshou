@@ -6,6 +6,7 @@ page{background-color: #efeff4;}
 .tui-picker-name{
   height: 80rpx;
   line-height: 80rpx;
+  text-align: center;
 }
 .tui-picker-detail{
   height: 80rpx;
@@ -14,4 +15,36 @@ page{background-color: #efeff4;}
   font-size: 35rpx;
   padding: 0 10px;
   overflow: hidden;
+}
+.section{
+  font-size: 50rpx;
+  text-align: center;
+}
+.section1{
+  font-size:60rpx;
+  text-align:center;
+  margin-top: 140rpx;
+  background-color: beige;
+}
+.btn1 {
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: burlywood;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnImg {
+  margin-right: 8rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+
+.btn1::after {
+  border-radius: 98rpx;
+  border: 0; 
 }

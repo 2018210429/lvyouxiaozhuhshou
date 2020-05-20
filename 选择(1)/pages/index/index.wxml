@@ -1,10 +1,14 @@
-<view class="section">
+<view class="section"> 旅游小助手</view>
+<image src='/images/旅游.jpg'></image>
+<text> 请选择旅游地点: </text>
+<view >
   <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
-    <view class="picker">
+    <view class="section1">
       地点选择：{{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
     </view>
   </picker>
 </view>
-<button bindtap='nextpage'> 查询</button>
-
-<button bindtap='nextmap'> 查询详情</button>
+<button class='btn1' bindtap='nextpage'>
+    <image class='btnImg' src='../../images/点击.jpg'></image>
+    <view>点击查询</view>
+ </button>

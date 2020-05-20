@@ -1,2 +1,8 @@
 <!--pages/list/list.wxml-->
-<text>data</text>
+<block wx:for="{{weather}}">
+<view>日期：{{item. date}}</view>
+<view>天气：{{item.wea}}</view>
+</block>
+ <block wx:for="{{content}}">
+ <button bindtap='detail' data-key='{{index}}'> {{item.name}} </button>
+ </block>
