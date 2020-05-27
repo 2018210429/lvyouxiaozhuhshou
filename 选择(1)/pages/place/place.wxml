@@ -1,5 +1,7 @@
 <block wx:for="{{detail}}">
-<view>名字: {{item.name}}</view>
+<view class="total"> {{item.name}}</view>
 <view>地址：{{item.adress}}</view>
-<view>简介：{{item.content}}</view>
+<view>简介：{{item.content}}。</view>
+<view>开放时间：{{item.hours}}</view>
+<view>价格：{{item.price}}</view>
 </block>

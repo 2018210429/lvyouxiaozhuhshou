@@ -1,0 +1,5 @@
+.total{
+  font-size:50rpx;
+  text-align:center;
+  line-height:50px;
+}
