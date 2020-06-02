@@ -1,0 +1,48 @@
+<!--pages/list/list.wxml-->
+<view class="page-section page-section-spacing">
+  <swiper indicator-dots="true" circular="true" interval="5000" duration="500" autoplay='true' class='swiper1'>
+    <block wx:for="{{weather}}">
+      <swiper-item>
+        <view wx:if="{{item.wea_img=='qing'}}">
+          <view>日期：{{item.date}}</view>
+          <view>天气：{{item.wea}} 
+          <image class='avator' src='/images/qing.png'></image></view></view>
+        <view wx:if="{{item.wea_img=='yun'}}">
+          <view>日期：{{item.date}}</view>
+          <view>天气：{{item.wea}} 
+        <image class='avator'src='/images/yun.png'></image></view></view>
+        <view wx:if="{{item.wea_img=='yin'}}">
+          <view>日期：{{item.date}}</view>
+          <view>天气：{{item.wea}} 
+        <image class='avator'src='/images/yin.png'></image></view></view>
+        <view wx:if="{{item.wea_img=='yu'}}">
+          <view>日期：{{item.date}}</view>
+          <view>天气：{{item.wea}} 
+        <image class='avator'src='/images/yu.png'></image></view></view>
+        <view wx:if="{{item.wea_img=='bingbao'}}">
+          <view>日期：{{item.date}}</view>
+          <view>天气：{{item.wea}} 
+        <image class='avator'src='/images/bingbao.png'></image></view></view>
+        <view wx:if="{{item.wea_img=='wu'}}">
+          <view>日期：{{item.date}}</view>
+          <view>天气：{{item.wea}} 
+        <image class='avator'src='/images/wu.png'></image></view></view>
+        <view wx:if="{{item.wea_img=='shachen'}}">
+          <view>日期：{{item.date}}</view>
+          <view>天气：{{item.wea}} 
+        <image class='avator'src='/images/shachen.png'></image></view></view>
+        <view wx:if="{{item.wea_img=='lei'}}">
+          <view>日期：{{item.date}}</view>
+          <view>天气：{{item.wea}} 
+        <image class='avator'src='/images/lei.png'></image></view></view>
+        <view wx:if="{{item.wea_img=='xue'}}">
+          <view>日期：{{item.date}}</view>
+          <view>天气：{{item.wea}} 
+        <image class='avator'src='/images/xue.png'></image></view></view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<block wx:for="{{content}}">
+<button bindtap='detail' data-key='{{index}}'> {{item.name}} </button>
+</block>

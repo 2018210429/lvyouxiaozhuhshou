@@ -1,0 +1,11 @@
+<block wx:for="{{detail}}">
+<view class="total"> {{item.name}}</view>
+<view><text class='view1'>地址：</text>{{item.adress}}</view>
+<view wx:if="{{item[0].rating!=''}}"><text class='view1'>大众评分：</text>{{item.rating}}</view>
+<view wx:if="{{item[0].grade!=''}}"><text class='view1'>等级：</text>{{item.grade}}</view>
+<view class='view3'><text class='view1'>简介tag：</text>{{item.content}}。</view>
+
+<view><text class='view1'>开放时间：</text>{{item.hours}}</view>
+<view class='view4'><text class='view1'>价格：</text>{{item.price}}</view>
+</block>
+<button bindtap='changetobaidu'>查看图片与导航</button>

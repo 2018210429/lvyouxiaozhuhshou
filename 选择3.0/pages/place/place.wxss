@@ -1,0 +1,39 @@
+.total{
+  font-size:50rpx;
+  text-align:center;
+  line-height:50px;
+  margin-bottom: 20rpx;
+  border-bottom-color: rgb(0, 0, 0);
+  border-style: none none solid none;
+}
+
+button{
+  border-style: outset;
+  border-color: rgb(122, 0, 112);
+  margin-bottom: 10rpx;
+  margin-top: 30rpx;
+  width: 80%;
+  border-radius: 10rpx
+}
+
+.view1{
+  font-family: '宋体';
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.view3{
+  width: 100%;
+  border-style: none none double none;
+  border-bottom-color: rgb(0, 0, 0);
+}
+
+.view4{
+  border-style: none none solid none;
+  border-bottom-color: rgb(0, 0, 0);
+}
+
+page{
+  background-color: rgb(245, 255, 255);
+  height: 100%;
+}
